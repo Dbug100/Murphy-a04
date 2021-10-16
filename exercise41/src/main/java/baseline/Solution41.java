@@ -10,23 +10,39 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Solution41 {
-    public void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException {
+        Solution41 call = new Solution41();
         //create scanner
-        Scanner file = new Scanner(new File("exercise41_input.txt"));
+        Scanner file = new Scanner(new File("data/exercise41_input.txt"));
         //create arraylist to store names
         ArrayList<String> names = new ArrayList<>();
         //call name sorter
-        nameSorter(file, names);
+         call.nameSorter(file, names);
         //close input file
+        file.close();
     }
 
     private void nameSorter(Scanner file, ArrayList<String> names) {
         //while file has another line add name to list
+        while(file.hasNextLine()){
+            names.add(file.nextLine());
+        }
+
         //use java built-in sort function to sort list
+        names.sort(String.CASE_INSENSITIVE_ORDER);
+        printNames(names);
 
     }
+    private void printNames(ArrayList<String> names) {
+        int length = names.size();
+        System.out.println("Total of "+length +" names\n-----------------");
 
-    private class printNames{
+        for(int i = 0; i < length; i++){
+            System.out.println(names.get(i));
+        }
+
+
+
         //open output file
         //print number of names
         //create for loop to print arraylist

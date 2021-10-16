@@ -1,11 +1,16 @@
 @startuml
-'https://plantuml.com/sequence-diagram
+class NameSorter{
+    -ArrayList<String> names;
 
-autonumber
+    +NameSorter()
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+    +readNamesFromText(String fileName)
+    +sortNames()
+    +writeNamesAsText(String fileName)
+}
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+class NameReader{
++readNamesFromText(String fileName)
+
+}
 @enduml
