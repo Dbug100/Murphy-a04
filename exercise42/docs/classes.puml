@@ -1,3 +1,6 @@
 @startuml
-
+class Solution42{
+    -vis printNames(arrayList) : void
+    -vis readNames(BufferedReader, ArrayList) : void
+}
 @enduml
