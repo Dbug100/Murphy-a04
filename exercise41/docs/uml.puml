@@ -2,15 +2,11 @@
 class NameSorter{
     -ArrayList<String> names;
 
-    +NameSorter()
-
-    +readNamesFromText(String fileName)
-    +sortNames()
-    +writeNamesAsText(String fileName)
+    -vis NameSorter(Scanner, (arrayList)
+    -vis printNames(arrayList) : void
 }
 
-class NameReader{
-+readNamesFromText(String fileName)
 
-}
+
+
 @enduml
