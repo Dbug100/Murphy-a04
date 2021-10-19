@@ -1,6 +1,12 @@
 @startuml
 class Solution42{
+    -ArrayList<String> ;
+    -ReadNames;
+}
+class ReadNames{
     -vis printNames(arrayList) : void
     -vis readNames(BufferedReader, ArrayList) : void
 }
+
+ReadNames --> Solution42
 @enduml

@@ -29,8 +29,8 @@ class Solution42Test {
 
             write.printf("%-10s", s);
             if (j == 3) {
-                write.print("\n");
                 j = 1;
+                write.print("\n");
             } else {
                 j++;
             }

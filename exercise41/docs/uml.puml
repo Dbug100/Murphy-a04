@@ -1,10 +1,9 @@
 @startuml
 class Solution41{
     -ArrayList<String> names;
-
+    -NameSorter;
 }
 class NameSorter{
-    -ArrayList<String> names;
 
     -vis NameSorter(Scanner, (arrayList)
     -vis printNames(arrayList) : void
