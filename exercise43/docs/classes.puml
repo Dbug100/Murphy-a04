@@ -1,11 +1,11 @@
 @startuml
-'https://plantuml.com/sequence-diagram
+class Solution43{
+- FileMaker
+}
 
-autonumber
-
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+class FileMaker{
+ -vis File fileCss
+ -vis File fileJs
+}
+FileMaker --> Solution43
 @enduml
