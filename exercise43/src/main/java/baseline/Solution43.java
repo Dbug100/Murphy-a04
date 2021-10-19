@@ -36,7 +36,6 @@ public class Solution43 {
     private void fileMaker(String site, char js, char css) {
         // use FileWriter to create file
         // make file - site name
-
         File file = new File(("data/./website/" + site));
         if(file.exists() && file.isDirectory()){
             System.out.println("Created " + file);

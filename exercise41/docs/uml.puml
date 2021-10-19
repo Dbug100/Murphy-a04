@@ -1,4 +1,8 @@
 @startuml
+class Solution41{
+    -ArrayList<String> names;
+
+}
 class NameSorter{
     -ArrayList<String> names;
 
@@ -6,7 +10,7 @@ class NameSorter{
     -vis printNames(arrayList) : void
 }
 
-
+NameSorter --> Solution41
 
 
 @enduml
