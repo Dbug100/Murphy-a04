@@ -5,8 +5,7 @@ package baseline;
  */
 //create actual files or just print the desired output?
 
-import java.io.File;
-import java.io.FileWriter;
+
 import java.io.IOException;
 import java.util.Scanner;
 

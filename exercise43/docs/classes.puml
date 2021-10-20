@@ -4,8 +4,8 @@ class Solution43{
 }
 
 class FileMaker{
- -vis File fileCss
- -vis File fileJs
+ -File fileCss
+ - File fileJs
 }
 FileMaker --> Solution43
 @enduml
