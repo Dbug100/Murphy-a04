@@ -5,8 +5,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileMaker {
-    //private File jsFile;
-    //private File cssFile;
     String path = "data/";
     String out = "Created ";
     void fileMaker(String site, char js, char css) {

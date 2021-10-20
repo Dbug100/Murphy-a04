@@ -5,13 +5,11 @@ package baseline;
  */
 //create actual files or just print the desired output?
 
-
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Solution43 {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         //create scanner
         Scanner userIn = new Scanner(System.in);
         //prompt user
